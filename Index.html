@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deepak Kumar — Sound Engineer & Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#7c3aed;--glass: rgba(255,255,255,0.03);--glass-2: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#061026 0%, #071427 60%),var(--bg);color:#e6eef8;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#00bcd4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#041022}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:#fff}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;padding:40px 0}
+    .hero h1{font-size:36px;margin:0 0 8px}
+    .hero p.lead{color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--accent);border:none;color:#041022;padding:12px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .card{background:linear-gradient(180deg,var(--glass),var(--glass-2));padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .profile-img{width:100%;height:320px;border-radius:10px;background:linear-gradient(180deg,#0b1120,#081026);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+
+    .section{margin-top:28px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:600;color:var(--muted)}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .proj-title{font-weight:700;margin:0 0 6px}
+    .proj-desc{color:var(--muted);margin:0}
+
+    footer{border-top:1px solid rgba(255,255,255,0.03);margin-top:40px;padding-top:20px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.grid-3{grid-template-columns:repeat(2,1fr)}.profile-img{height:220px}}
+    @media (max-width:560px){.grid-3{grid-template-columns:1fr}nav a{display:none}.container{padding:20px}}
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.25);font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">DK</div>
+        <div>
+          <div style="font-weight:900">Deepak Kumar</div>
+          <div class="muted" style="font-size:13px">Sr. Sound Engineer Cum Studio In-Charge---  Times School of Media, Bennett University</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Hi — I'm Deepak Kumar</h1>
+          <p class="lead">Professional Sound Engineer with 14 years of experience creating high-quality audio for film, events, and education. Currently at the Times School of Media (Bennett University) since July 23, 2018.</p>
+          <div class="tag">Previously: Rohit Films (2011 — 2018)</div>
+
+          <div style="margin-top:18px" class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="mailto:deepu0634@gmail.com">Hire / Contact</a>
+          </div>
+
+          <div class="section">
+            <h3 style="margin:0 0 8px">Core skills</h3>
+            <div class="skills">
+              <div class="skill">Field Recording</div>
+              <div class="skill">Mixing & Mastering</div>
+              <div class="skill">Foley</div>
+              <div class="skill">Live Sound</div>
+              <div class="skill">Pro Tools / Logic Pro</div>
+              <div class="skill">Sound Design</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <div class="profile-img">
+            <img src="images/deepak.jpg" alt="Deepak Kumar portrait" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+          </div>
+
+          <div style="margin-top:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:800">Contact</div>
+                <div class="muted" style="font-size:13px">Mumbai, India • Available for projects</div>
+              </div>
+              <div style="text-align:right">
+                <div style="font-weight:800">14 yrs</div>
+                <div class="muted" style="font-size:13px">Experience</div>
+              </div>
+            </div>
+
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <a class="btn ghost" href="#contact">Message</a>
+              <a class="btn" href="images/Resume-Deepak-kumar.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section card">
+        <h2 style="margin-top:0">About me</h2>
+        <p class="muted">I build immersive audio experiences for film, broadcast and live productions. My work spans on-location location recording, post-production mixing, and teaching sound engineering fundamentals to aspiring audio professionals. I believe in practical sound design, honest mixes, and fast workflows.</p>
+      </section>
+
+      <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="grid-3" style="margin-top:12px">
+          <div class="card">
+            <div style="font-weight:800">Times School of Media — Sound Engineer</div>
+            <div class="muted" style="font-size:13px">July 23, 2018 — Present</div>
+            <p class="muted" style="margin-top:8px">Teaching sound courses, running studio sessions, managing audio for student productions and live events.</p>
+          </div>
+
+          <div class="card">
+            <div style="font-weight:800">Rohit Films — Assistant / Sound Recordist</div>
+            <div class="muted" style="font-size:13px">2011 — 2018</div>
+            <p class="muted" style="margin-top:8px">Location recording, boom operation, on-set mixing and DI post workflows for short films and commercials.</p>
+          </div>
+
+          <div class="card">
+            <div style="font-weight:800">Freelance Projects & Workshops</div>
+            <div class="muted" style="font-size:13px">2009 — Present</div>
+            <p class="muted" style="margin-top:8px">Workshops, guest lectures, and freelance sound design for independent filmmakers and creators.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Selected projects</h2>
+        <div class="projects" style="margin-top:12px">
+          <article class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="proj-title">Short Film — "Echoes of Dust"</div>
+                <p class="proj-desc">Location sound & final mix for a 25-minute award-winning short. Responsible for feed mixes and ambience design.</p>
+              </div>
+              <div style="font-weight:800">2023</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="proj-title">Documentary — "City Rhythms"</div>
+                <p class="proj-desc">Field recording in urban locations, noise reduction and airchecks for broadcast delivery.</p>
+              </div>
+              <div style="font-weight:800">2022</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="proj-title">Commercial — Brand X</div>
+                <p class="proj-desc">On-set mixing and ADR coordination for a 60-second TV spot.</p>
+              </div>
+              <div style="font-weight:800">2021</div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div class="proj-title">Student Anthology — Sound Supervisor</div>
+                <p class="proj-desc">Supervised audio workflow across 6 student films. Mentored peers in mixing and deliverables.</p>
+              </div>
+              <div style="font-weight:800">2019</div>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:10px">
+          <a class="btn" href="#contact">Book a session</a>
+          <a class="btn ghost" href="/audio-samples.zip">Download samples</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section card">
+        <h2 style="margin-top:0">Contact</h2>
+        <p class="muted">I'm open to collaborations, teaching invitations, and freelance projects. Reach out and let's talk about sound.</p>
+
+        <form style="margin-top:12px" onsubmit="submitContact(event)">
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <input required placeholder="Your name" name="name" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+            <input required placeholder="Email" name="email" type="email" style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+          </div>
+          <textarea required placeholder="Message" name="message" style="width:100%;min-height:120px;margin-top:10px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+          <div style="margin-top:10px"><button class="btn" type="submit">Send message</button></div>
+        </form>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:14px">
+          <div><strong>Email:</strong> <a class="muted" href="mailto:deepak@example.com">deepak@example.com</a></div>
+          <div><strong>Phone:</strong> +91 98765 43210</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Deepak Kumar — Sound Engineer</div>
+      <div class="muted">Built with care • Available for hire</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function submitContact(e){
+      e.preventDefault();
+      const form = e.target;
+      // Simple client-side behavior. Replace with your backend endpoint or mailto if needed.
+      alert('Thanks ' + form.name.value + '! Your message has been prepared to send. Replace this handler with your server-side form endpoint.');
+      form.reset();
+    }
+  </script>
+</body>
+</html>
